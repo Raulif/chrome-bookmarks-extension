@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Bookmarks Extension",
+  "description": "Fetch and store Chrome bookmarks in a database",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["bookmarks"],
+  "host_permissions": [
+    "https://your-netlify-app.netlify.app/*"
+  ]
+}
