@@ -45,7 +45,7 @@ export const getAndStoreBookmarks = async () => {
     const boorkmarks =  await getBookmarksFromBrowser();
     const response = await saveToDatabase(boorkmarks);
     console.log("Bookmarks saved to database:", response);
-    if (response.status === 200) {
+    if (response.ok) {
       const button = document.querySelector("button");
       button.innerText = "Success!";
     }
