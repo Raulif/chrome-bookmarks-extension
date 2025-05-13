@@ -31,7 +31,7 @@ const parseBookmarks = (bookmarks) => {
   return bookmarks.map((bookmark) => {
     const { id, title, url, dateAdded } = bookmark;
     return {
-      bookmarkId: `${id}-${dateAdded}`,
+      id: `${id}-${dateAdded}`,
       title,
       url,
       dateAdded
